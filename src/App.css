@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../public/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-box input {
+  padding: 12px;
+  width: 60%;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-box button {
+  padding: 12px 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.search-box button:hover {
+  background: #e0e0e0;
+}
+
+
+.weather-card {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+
+.left-today {
+  width: 45%;
+  text-align: center;
+  border-right: 2px solid white;
+}
+
+.left-today h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.left-today h1 {
+  font-size: 52px;
+  margin: 10px 0;
+}
+
+.left-today img {
+  width: 100px;
+}
+
+
+.right-details {
+  width: 45%;
+  padding-left: 20px;
+}
+
+.right-details h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.right-details p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.forecast-box {
+  background: #ffffff;
+  width: 130px;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.forecast-box p {
+  margin: 6px 0;
+  font-size: 15px;
 }
