@@ -22,3 +22,4 @@ https://openweathermap.org/
 ## Screenshots of my working app
 
 
+<img width="959" height="494" alt="labtest2" src="https://github.com/user-attachments/assets/ca9dd989-1f73-46ff-9a61-de74645385d4" />
